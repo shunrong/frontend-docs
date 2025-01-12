@@ -3,6 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   base: '/front-doc/',
   publicPath: '/front-doc/',
+  outputPath: 'docs-dist',
   themeConfig: {
     name: 'lime-lib',
     nav: [
