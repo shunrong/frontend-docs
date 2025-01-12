@@ -74,6 +74,8 @@
     "stylelint": "^14.9.1"
   },
   "dependencies": {
-    "antd": "^5.23.0"
+    "@ant-design/icons": "^5.5.2",
+    "antd": "^5.23.0",
+    "classnames": "^2.5.1"
   }
 }

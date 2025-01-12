@@ -1,0 +1,147 @@
+@import '../styles/variables.less';
+
+@btn-prefix-cls: ~'lime-btn';
+
+.@{btn-prefix-cls} {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+  touch-action: manipulation;
+  padding: 4px 15px;
+  font-size: @font-size-base;
+  border-radius: @border-radius-base;
+  color: @text-color;
+  background: @btn-default-bg;
+  border-color: @border-color-base;
+  margin-right: 8px;
+  margin-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    color: @primary-color;
+    border-color: @primary-color;
+  }
+
+  &:active {
+    color: darken(@primary-color, 10%);
+    border-color: darken(@primary-color, 10%);
+  }
+
+  &-primary {
+    color: #fff;
+    background: @primary-color;
+    border-color: @primary-color;
+
+    &:hover,
+    &:focus {
+      background: lighten(@primary-color, 10%);
+      border-color: lighten(@primary-color, 10%);
+    }
+
+    &:active {
+      background: darken(@primary-color, 10%);
+      border-color: darken(@primary-color, 10%);
+    }
+  }
+
+  &-dashed {
+    border-style: dashed;
+  }
+
+  &-link {
+    color: @primary-color;
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      color: lighten(@primary-color, 10%);
+    }
+
+    &:active {
+      color: darken(@primary-color, 10%);
+    }
+  }
+
+  &-text {
+    color: @text-color;
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &-large {
+    padding: 6px 15px;
+    font-size: @font-size-lg;
+    border-radius: @border-radius-base;
+  }
+
+  &-small {
+    padding: 2px 7px;
+    font-size: @font-size-sm;
+    border-radius: @border-radius-base;
+  }
+
+  &-circle {
+    min-width: 32px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  &-round {
+    border-radius: 32px;
+  }
+
+  &-loading {
+    opacity: 0.65;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &-disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &-loading-icon {
+    animation: loadingCircle 1s infinite linear;
+  }
+
+  &-icon-only {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+
+    &.@{btn-prefix-cls}-large {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    &.@{btn-prefix-cls}-small {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+} 

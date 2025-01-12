@@ -1,7 +1,7 @@
 ---
 nav:
   title: Hooks
-  path: /foo
+  path: /hooks
 group:
   title: 状态相关
   order: 1
