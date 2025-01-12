@@ -1,8 +1,8 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/front-doc/',
-  publicPath: '/front-doc/',
+  base: '/frontend-docs/',
+  publicPath: '/frontend-docs/',
   outputPath: 'docs-dist',
   themeConfig: {
     name: 'lime-lib',
