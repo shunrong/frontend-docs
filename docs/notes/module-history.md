@@ -3,8 +3,11 @@ nav:
   title: 笔记
   path: /notes
 group:
+  title: 中枢-工程化
+  order: 2
+type:
   title: 模块化
-  order: 1
+  order: 2
 ---
 
 # 模块化发展史

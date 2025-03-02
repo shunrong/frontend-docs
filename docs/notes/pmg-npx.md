@@ -3,8 +3,12 @@ nav:
   title: 笔记
   path: /notes
 group:
+  title: 中枢-工程化
+  order: 2
+type:
   title: 包管理器
   order: 1
+title: npx 是什么？
 ---
 
 # npx 是什么？
