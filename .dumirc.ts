@@ -8,7 +8,7 @@ export default defineConfig({
     name: 'lime-lib',
     nav: [
       { title: '首页', link: '/' },
-      { title: '笔记', link: '/notes/javascript-history' },
+      { title: '笔记', link: '/notes/html-doc-declare' },
       { title: '组件', link: '/components/button' },
       { title: 'hooks', link: '/hooks/use-boolean' },
     ],
